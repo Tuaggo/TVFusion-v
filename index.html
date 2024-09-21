@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVFusion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-title">
+        <h1>TVFusion 📺</h1>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar canais...">
+    </div>
+
+    <div class="player-container">
+        <iframe id="videoPlayer" width="560" height="315" allow="encrypted-media" allowfullscreen frameborder="0"></iframe>
+    </div>
+
+    <div class="reload-button-container">
+        <button class="reload-button" onclick="window.location.reload();">Recarregar</button>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">TV Aberta</h2>
+        <div class="carousel">
+            <div class="channel" onclick="openChannel('https://embedmax.site/tvl/sbt.php')">
+                <img src="https://playertv.net/wp-content/uploads/2024/04/sbt-300x169.webp" alt="SBT">
+                <h3>SBT</h3>
+            </div>
+            <div class="channel" onclick="openChannel('https://embedmax.site/canais/GLOBOSP.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20globo%20ao%20vivo.webp" alt="Globo SP">
+                <h3>Globo SP</h3>
+            </div>
+            <div class="channel" onclick="openChannel('https://embedmax.site/tvl/band.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20band%20ao%20vivo.webp" alt="Band">
+                <h3>Band</h3>
+            </div>
+            <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tvbrasil.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20tv%20brasil%20ao%20vivo.webp" alt="TV Brasil">
+                <h3>TV Brasil</h3>
+            </div>
+            <div class="channel" onclick="openChannel('https://embedmax.site/tvl/recordSP.php')">
+                <img src="https://embedmax.site/imgs-thumbs/assistir%20record%20tv%20ao%20vivo.webp" alt="Record SP">
+                <h3>Record SP</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="category">
+        <h2 class="category-title">Entretenimento</h2>
+
+     <div class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda1.php')">
+            <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+            <h3>A Fazenda 1</h3>
+     </div>
+     <div class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda2.php')">
+            <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+            <h3>A Fazenda 2</h3>
+     </div>
+    <div 
+        class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda3.php')">
+        <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+        <h3>A Fazenda 3</h3>
+    </div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda4.php')">
+        <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+            <h3>A Fazenda 4</h3></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda5.php')">
+                <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+                <h3>A Fazenda 5</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/afazenda.php')">
+        <img src="https://embedmax.site/imgs-thumbs/a-fazenda-16-ao-vivo.webp" alt="SBT">
+        <h3>A Fazenda 6</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tcpremium.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20telecine%20ao%20vivo.webp" alt="SBT">
+        <h3>Telecine Premium</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tcpipoca.php')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo-mE-O5_24byUGMXiYssew78lJgJssj20DA&s" alt="SBT">
+        <h3>Telecine Pipoca</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tcaction.php')">
+        <img src="https://i.vimeocdn.com/video/810187810-b8e1f2f47cb1e9497ea33c22bb496181b2d87aa3ed96770d3341538bf7168578-d_750x421.875?q=60" alt="SBT">
+        <h3>Telecine Action</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tctouch.php')">
+        <img src="https://i.pinimg.com/originals/c9/32/34/c93234220293ca7928612520d1206671.jpg" alt="SBT">
+        <h3>Telecine Touch</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/tccult.php')">
+        <img src="https://i.vimeocdn.com/video/810187333-51e53d3b2a1939f2dea937c289fb01f8937d83a07fff943bb46a180285b90b9c-d_750x421.875?q=60" alt="SBT">
+        <h3>Telecine Cult</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hbo.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20hbo%20ao%20vivo.webp" alt="SBT">
+        <h3>HBO</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hbo2.php')">
+        <img src="https://logospng.org/wp-content/uploads/hbo-2.png" alt="SBT">
+        <h3>HBO 2</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hboplus.php')">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAbFBMVEUAAAD///+Kiop6enrx8fGbm5uYmJiPj4/Y2Njk5ORHR0dMTEzd3d3a2tr39/fo6OgcHBx0dHTAwMCCgoI5OTlZWVkwMDDHx8ehoaHR0dG3t7c+Pj4PDw9jY2MqKipubm6qqqojIyMNDQ1mZmYMBw/dAAACuElEQVR4nO3Z6a6iMACG4ZZFRQREBXHFM+f+73EEy1IkhEwineD7/BFqIe2XthYUAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4EskmVvIbu0TXyzcxsJO9Wt897jaBMcsMdFgk5byxW2f2CKUmshqrnCdujh8bE212whL9XtRnDRhObLDU7HYnRiXJhs/tbFhSaesfn4rPxlt/rRGhyXPzwqn92LpGe7BhMaHFQqx68lKypXpPkxmfFjysu/NSsqH2S5MZzgsO45jO1KltyaenZXvz81SfzHdi4kMh1VWuajSoMqmWL2KrZdbFRwNdmBKw2FdyzqdWbcXSZGbF4t6rN2N9mEyVVjL9ok+spLuCrWoR5h2dWW+G9Wqu87G87xqWa/DivM83+vb0LAZT9IS0ds8TGf882jJHr2bUq8aTl4rODVxo+aG6xnvvMaG5d3VILKvrVLfVwfNDQmrWP/VbLxdWsVxSlg9Iyu6qpEV/7RKkzVh9a1ZkVqqHtWiXmakNvWvp2xxOBzS5/If3Z8Hc9xNDIcVBMHK079zRPPUkwm1UX29etD2GKHhjn1CFdZj7fvrrBuWVkVZ1u9pTiJXR+WrQ2Fr9f6Y7NZn/MMOPhFW+EroUBW9Hg7T0HGc4qviY46breGwytGxVfOqfkFjPZfx3Bf1uNJ2oYcvWOAHHqRVSOG9HlvRIkl9a9Maa41v+DXsD8tR86o8Fpnst2vf8HvD6kSy6s0q0m5IWIXfZ4Xovfg5PbUb+t30ZmR0WK9FPHgrj370G26Pm2zyXkxkbFiOekvVXbfOJhs/tSqs4X+k5bHeYqbtv3hOvrmWGxBvVoXNvjix1cmvOAWrxtE9tC+57nfFI1C0s+b4/PcJV9MNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+K/8BWNnGjId+bA4AAAAAElFTkSuQmCC" alt="SBT">
+        <h3>HBO+</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hbofamily.php')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/HBO_Family_logo.png" alt="SBT">
+        <h3>HBO Family</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hbosignature.php')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/HBO_Signature.svg/2560px-HBO_Signature.svg.png" alt="SBT">
+        <h3>HBO Signature</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/hboxtreme.php')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzthpuH0P0dFOAI6kB7FbU8tNKd7REo0JkSg&s" alt="SBT">
+        <h3>HBO Xtreme</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/discoverychannel.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20discovery%20channel%20ao%20vivo.webp" alt="SBT">
+        <h3>Discovery Channel</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/discoveryworld.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20discovery%20world%20ao%20vivo.webp" alt="SBT">
+        <h3>Discovery World</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/discoveryturbo.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20discovery%20turbo%20ao%20vivo.webp" alt="SBT">
+        <h3>Discovery Turbo</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/discoveryid.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20discovery%20id%20ao%20vivo.webp" alt="SBT">
+        <h3>Discovery ID</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/discoveryheh.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20discovery%20h&h%20ao%20vivo.webp" alt="SBT">
+        <h3>Discovery H&H</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/comedycentral.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20comedy%20central%20ao%20vivo.webp" alt="SBT">
+        <h3>Comedy Central</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/amc.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20amc%20ao%20vivo.webp" alt="SBT">
+        <h3>AMC</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/axn.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20axn%20ao%20vivo.webp" alt="SBT">
+        <h3>AXN</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/fx.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20fx%20ao%20vivo.webp" alt="SBT">
+        <h3>FX</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/history.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20history%20ao%20vivo.webp" alt="SBT">
+        <h3>History</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/history2.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20history%202%20ao%20vivo.webp" alt="SBT">
+        <h3>History 2</h3
+    ></div>
+    <div class="channel" onclick="openChannel('https://embedmax.site/tvl/megapix.php')">
+        <img src="https://embedmax.site/imgs-thumbs/assistir%20megapix%20ao%20vivo.webp" alt="SBT">
+        <h3>Megapix</h3
+    ></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
